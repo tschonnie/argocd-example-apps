@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: examples
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: examples
   source:
     path: guestbook
     repoURL: https://github.com/tschonnie/argocd-example-apps
