@@ -9,10 +9,10 @@ spec:
   destination:
     namespace: argocd
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: examples
   source:
     path: helm-guestbook
-    repoURL: https://github.com/argoproj/argocd-example-apps
+    repoURL: https://github.com/tschonnie/argocd-example-apps
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
     automated:
